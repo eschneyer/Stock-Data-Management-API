@@ -15,7 +15,7 @@ class TimeSeriesDaily(Resource):
         Raises:
             HTTP status code 404: If the quantitative data for the desired stock could not be fetched from the API.
         """
-        key = '8Z7TO0JMURALV8EU'
+        key = 'YOUR API KEY'
         url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize=compact&apikey={key}'
         r = requests.get(url)
 

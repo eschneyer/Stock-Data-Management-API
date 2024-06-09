@@ -15,7 +15,7 @@ class Sentiments(Resource):
         Raises:
             HTTP status code 404: If the sentiment data for the desired stock could not be fetched from the API.
         """
-        key = '8Z7TO0JMURALV8EU'
+        key = 'YOUR API KEY'
         url = f'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={symbol}&apikey={key}'
         r = requests.get(url)
 

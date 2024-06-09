@@ -15,7 +15,7 @@ class QuoteEndpoint(Resource):
         Raises:
             HTTP status code 404: If the quote endpoint data for the desired stock could not be fetched from the API
         """
-        key = '8Z7TO0JMURALV8EU'
+        key = 'YOUR API KEY'
         url = f'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={symbol}&apikey={key}'
         r = requests.get(url)
 
